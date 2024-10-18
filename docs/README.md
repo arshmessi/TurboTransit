@@ -14,8 +14,6 @@ A robust, scalable, and maintainable logistics platform built using microservice
 8. [Monitoring and Observability](#monitoring-and-observability)
 9. [Security](#security)
 10. [Performance Optimization](#performance-optimization)
-11. [Fault Tolerance and Reliability](#fault-tolerance-and-reliability)
-
 ## Overview
 
 The Logistics Platform is designed to efficiently handle high loads and real-time updates. Built on a microservices architecture, each service is modular and scalable. The platform manages core logistics functionalities including user management, authentication, driver and vehicle management, booking, matching drivers with bookings, real-time tracking, pricing, and administrative operations.
@@ -200,7 +198,3 @@ Repeat this for all services.
 - **Caching**: Use Redis for multi-level caching to reduce load on databases.
 - **Load Balancing**: Use Kubernetes to manage scaling and load balancing across instances of each service.
 
-## Fault Tolerance and Reliability
-
-- **Circuit Breakers**: Use `github.com/sony/gobreaker` to prevent cascading failures.
-- **Retry Mechanisms**: Implement retry policies for failed requests and timeouts.
