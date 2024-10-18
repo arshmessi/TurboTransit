@@ -138,7 +138,3 @@ spec:
 kubectl apply -f deployments/auth-service-deployment.yaml
 kubectl apply -f deployments/auth-service-service.yaml
 ```
-
-```
-
-```
