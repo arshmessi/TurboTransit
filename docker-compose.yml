@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  user-service:
+    build: ./user-service
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "8081:8081"
+
+  driver-service:
+    build: ./driver-service
+    ports:
+      - "8082:8082"
+
+  api-gateway:
+    build: ./api-gateway
+    ports:
+      - "8080:8080"
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: logistics
+    ports:
+      - "5432:5432"
+
+  redis:
+    image: redis:6
+    ports:
+      - "6379:6379"
+
+  nats:
+    image: nats:2
+    ports:
+      - "4222:4222"
