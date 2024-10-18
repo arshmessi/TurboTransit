@@ -41,8 +41,8 @@ The platform uses a microservices architecture where services communicate via RE
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/logistics-platform.git
-cd logistics-platform
+git clone https://github.com/arshmessi/TurboTransit.git
+cd TurboTransit
 ```
 
 ### Install Dependencies
