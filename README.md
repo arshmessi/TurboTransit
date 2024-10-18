@@ -1,4 +1,4 @@
-# Comprehensive Logistics Platform Architecture
+# Logistics Platform Architecture
 
 ## 1. Microservice Architecture
 
